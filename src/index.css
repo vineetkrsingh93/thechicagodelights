@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Chicago Delights - Premium Dark Pizza Franchise Theme */
+
+@layer base {
+  /* Light Harvest Theme */
+  :root {
+    --background: 40 30% 96%;
+    --foreground: 20 20% 15%;
+
+    --card: 40 25% 92%;
+    --card-foreground: 20 20% 15%;
+
+    --popover: 40 25% 92%;
+    --popover-foreground: 20 20% 15%;
+
+    /* Brand Red - Primary */
+    --primary: 0 85% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Golden Yellow - Accent */
+    --secondary: 35 90% 50%;
+    --secondary-foreground: 20 20% 10%;
+
+    /* Muted warm tones */
+    --muted: 35 20% 88%;
+    --muted-foreground: 20 15% 40%;
+
+    /* Accent matches secondary */
+    --accent: 35 90% 50%;
+    --accent-foreground: 20 20% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 15% 80%;
+    --input: 35 20% 88%;
+    --ring: 0 85% 45%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradients - Light */
+    --gradient-hero: linear-gradient(135deg, hsl(20 20% 10% / 0.7) 0%, hsl(20 20% 10% / 0.3) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(0 85% 45%) 0%, hsl(0 85% 38%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(35 90% 50%) 0%, hsl(30 90% 45%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(40 25% 94%) 0%, hsl(40 25% 90%) 100%);
+
+    /* Shadows - Light */
+    --shadow-glow: 0 0 40px hsl(0 85% 45% / 0.2);
+    --shadow-gold: 0 0 30px hsl(35 90% 50% / 0.15);
+    --shadow-elevated: 0 20px 40px hsl(20 20% 10% / 0.1);
+
+    --sidebar-background: 40 25% 92%;
+    --sidebar-foreground: 20 20% 15%;
+    --sidebar-primary: 0 85% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 35 20% 88%;
+    --sidebar-accent-foreground: 20 20% 15%;
+    --sidebar-border: 30 15% 80%;
+    --sidebar-ring: 0 85% 45%;
+  }
+
+  /* Dark Premium Theme */
+  .dark {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 98%;
+
+    /* Brand Red - Primary */
+    --primary: 0 85% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Golden Yellow - Accent */
+    --secondary: 45 100% 50%;
+    --secondary-foreground: 0 0% 5%;
+
+    /* Muted dark tones */
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 65%;
+
+    /* Accent matches secondary */
+    --accent: 45 100% 50%;
+    --accent-foreground: 0 0% 5%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 0 85% 50%;
+
+    /* Custom gradients - Dark */
+    --gradient-hero: linear-gradient(135deg, hsl(0 0% 0% / 0.8) 0%, hsl(0 0% 0% / 0.4) 100%);
+    --gradient-primary: linear-gradient(135deg, hsl(0 85% 50%) 0%, hsl(0 85% 40%) 100%);
+    --gradient-gold: linear-gradient(135deg, hsl(45 100% 50%) 0%, hsl(35 100% 45%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 10%) 0%, hsl(0 0% 6%) 100%);
+
+    /* Shadows - Dark */
+    --shadow-glow: 0 0 40px hsl(0 85% 50% / 0.3);
+    --shadow-gold: 0 0 30px hsl(45 100% 50% / 0.2);
+    --shadow-elevated: 0 20px 40px hsl(0 0% 0% / 0.5);
+
+    --sidebar-background: 0 0% 8%;
+    --sidebar-foreground: 0 0% 98%;
+    --sidebar-primary: 0 85% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 15%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 0 85% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Inter', sans-serif;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.02em;
+  }
+}
+
+@layer components {
+  .gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .gradient-primary {
+    background: var(--gradient-primary);
+  }
+
+  .gradient-gold {
+    background: var(--gradient-gold);
+  }
+
+  .gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .shadow-glow {
+    box-shadow: var(--shadow-glow);
+  }
+
+  .shadow-gold {
+    box-shadow: var(--shadow-gold);
+  }
+
+  .shadow-elevated {
+    box-shadow: var(--shadow-elevated);
+  }
+
+  .text-gradient-gold {
+    background: linear-gradient(135deg, hsl(45 100% 50%) 0%, hsl(35 100% 60%) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
+
+@layer utilities {
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .animate-slide-up {
+    animation: slide-up 0.6s ease-out forwards;
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.8s ease-out forwards;
+  }
+
+  .animate-scale-in {
+    animation: scale-in 0.5s ease-out forwards;
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px hsl(0 85% 50% / 0.4); }
+    50% { box-shadow: 0 0 40px hsl(0 85% 50% / 0.6); }
+  }
+
+  @keyframes slide-up {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  @keyframes scale-in {
+    from { opacity: 0; transform: scale(0.95); }
+    to { opacity: 1; transform: scale(1); }
+  }
+}
