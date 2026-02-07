@@ -1,10 +1,10 @@
 import { ChevronRight, Pizza } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import heroPizza from "@/assets/hero-pizza.jpg";
+import heroPizza from "@/assets/vegetables-pizza.jpg";
 export function HeroSection() {
   return <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background Image */}
-      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+      <div className="absolute inset-0 bg-cover bg-bottom bg-no-repeat" style={{
       backgroundImage: `url(${heroPizza})`
     }} />
       
