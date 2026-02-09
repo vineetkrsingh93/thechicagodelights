@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
 
 const highlights = [
-  { icon: Building2, text: "50+ Outlets Across India" },
+  { icon: Building2, text: "80+ Outlets Across India" },
   { icon: Users, text: "Complete Training & Support" },
   { icon: TrendingUp, text: "High Profit Business Model" },
   { icon: Award, text: "Strong Established Brand" },

@@ -1,28 +1,34 @@
 import { useState } from "react";
 import { X } from "lucide-react";
-import outlet1 from "@/assets/outlet-1.jpg";
-import outlet2 from "@/assets/outlet-2.jpg";
-import outlet3 from "@/assets/outlet-3.jpg";
-import outlet4 from "@/assets/outlet-4.jpg";
-import vegPizza from "@/assets/veg-pizza.jpg";
-import nonvegPizza from "@/assets/nonveg-pizza.jpg";
-import sides from "@/assets/sides.jpg";
-import combos from "@/assets/combos.jpg";
+import outlet1 from "@/assets/outlet1.jpeg";
+import outlet2 from "@/assets/outlet2.jpeg";
+import outlet3 from "@/assets/outlet3.jpeg";
+import outlet4 from "@/assets/outlet4.jpeg";
+import outlet5 from "@/assets/outlet5.jpeg";
+import outlet6 from "@/assets/outlet6.jpeg";
+import outlet7 from "@/assets/outlet7.jpeg";
+import outlet8 from "@/assets/outlet8.jpeg";
+import outlet9 from "@/assets/outlet9.jpeg";
+import outlet10 from "@/assets/outlet10.jpeg";
+import outlet11 from "@/assets/outlet11.jpeg";
+import outlet12 from "@/assets/outlet12.jpeg";
 
 const galleryImages = [
-  { src: outlet1, alt: "Premium Restaurant Interior", category: "outlet" },
-  { src: vegPizza, alt: "Gourmet Veg Pizza", category: "food" },
-  { src: outlet2, alt: "Professional Kitchen", category: "outlet" },
-  { src: nonvegPizza, alt: "Non-Veg Special", category: "food" },
-  { src: outlet3, alt: "Happy Customers", category: "outlet" },
-  { src: sides, alt: "Delicious Sides", category: "food" },
-  { src: outlet4, alt: "Fast Delivery", category: "outlet" },
-  { src: combos, alt: "Family Combos", category: "food" },
-  { src: combos, alt: "Family Combos", category: "food" },
-  { src: combos, alt: "Family Combos", category: "food" },
-  { src: combos, alt: "Family Combos", category: "food" },
-  
+   { src: outlet7, alt: "Grand Outlet Entrance", category: "outlet" },
+   { src: outlet2, alt: "Chicago Delights Seating Area", category: "outlet" },
+   { src: outlet8, alt: "Chicago Delights Storefront", category: "outlet" },
+   { src: outlet10, alt: "Premium Interior", category: "interior" },
+    { src: outlet9, alt: "Outlet Opening Celebration", category: "outlet" },
+  { src: outlet1, alt: "Chicago Delights Outlet Interior", category: "outlet" },
+{ src: outlet4, alt: "Cozy Dining Space", category: "outlet" },
+  { src: outlet3, alt: "Chicago Delights Modern Interior", category: "outlet" },
+   { src: outlet11, alt: "Customers Dining", category: "outlet" },
+  { src: outlet12, alt: "Luxury Seating Area", category: "outlet" },
+  { src: outlet5, alt: "Chicago Delights Night Exterior", category: "outlet" },
+  { src: outlet6, alt: "Entrance & Waiting Area", category: "outlet" },
+ 
 ];
+
 
 export function GallerySection() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
