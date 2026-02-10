@@ -43,7 +43,11 @@ export function Header() {
           {/* 🔥 LOGO + BRAND */}
           {/* LOGO + BRAND */}
 <a href="#home" className="flex items-center gap-3 whitespace-nowrap">
-  <img src="/logo.png" alt="logo" className="h-14 md:h-16 w-auto" />
+ <img 
+  src="/logo.png" 
+  alt="logo" 
+  class="h-14 md:h-[8em] w-auto"
+/>
 
 
   <div className="flex items-center gap-2">
