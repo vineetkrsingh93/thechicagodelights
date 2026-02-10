@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Instagram } from "lucide-react";
+import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
 
 const footerLinks = [
   { name: "Home", href: "#home" },
@@ -12,6 +12,7 @@ export function Footer() {
     <footer id="contact" className="bg-card border-t border-border">
       <div className="container mx-auto px-4 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
+
           {/* Brand */}
           <div className="lg:col-span-2">
             <a href="#home" className="flex items-center gap-2 mb-4">
@@ -48,12 +49,14 @@ export function Footer() {
           <div>
             <h4 className="font-display text-xl text-foreground mb-6">Contact Us</h4>
             <ul className="space-y-4">
+
               <li className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
                 <span className="text-muted-foreground">
                   Booths, 61, 35C, Sector 35, Chandigarh, 160022
                 </span>
               </li>
+
               <li>
                 <a
                   href="tel:+919996553545"
@@ -63,6 +66,7 @@ export function Footer() {
                   +91 9996553545
                 </a>
               </li>
+
               <li>
                 <a
                   href="mailto:chicagodelightskkr@gmail.com"
@@ -72,6 +76,8 @@ export function Footer() {
                   chicagodelightskkr@gmail.com
                 </a>
               </li>
+
+              {/* Instagram */}
               <li>
                 <a
                   href="https://www.instagram.com/chicagodelights/"
@@ -83,6 +89,20 @@ export function Footer() {
                   @chicagodelights
                 </a>
               </li>
+
+              {/* Facebook */}
+              <li>
+                <a
+                  href="https://www.facebook.com/chicagodelightsind/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 text-muted-foreground hover:text-primary transition-colors"
+                >
+                  <Facebook className="w-5 h-5 text-primary" />
+                  Chicago Delights Facebook
+                </a>
+              </li>
+
             </ul>
           </div>
         </div>
@@ -100,6 +120,7 @@ export function Footer() {
             title="Chicago Delights Location"
           />
         </div>
+
       </div>
     </footer>
   );

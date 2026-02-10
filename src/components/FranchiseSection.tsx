@@ -23,21 +23,66 @@ export function FranchiseSection() {
     message: "",
   });
 
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
+const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
 
-    // Simulate form submission
-    await new Promise((resolve) => setTimeout(resolve, 1500));
+  const data = {
+    name: formData.name,
+    phone: formData.phone,
+    city: formData.city,
+    budget: formData.budget,
+    message: formData.message,
+  };
+
+  try {
+    // SAVE TO GOOGLE SHEET
+    await fetch(
+      "https://script.google.com/macros/s/AKfycbzyUtQAHMJhcrgPVHg_3DcUsuFyVjeAuWyE-SPo1DpJdsDqreqEMnFGZaqYj-gfvim2Bw/exec",
+      {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "text/plain",
+        },
+        body: JSON.stringify(data),
+      }
+    );
+
+    // SEND EMAIL
+    const emailjs = await import("@emailjs/browser");
+
+    await emailjs.default.send(
+      "service_m4b3y6z",
+      "template_sii4mrq",
+      data,
+      "Fbk8EhVjqhiAWv7Q0"
+    );
 
     toast({
       title: "Application Submitted!",
       description: "Our franchise team will contact you within 24 hours.",
     });
 
-    setFormData({ name: "", phone: "", city: "", budget: "", message: "" });
-    setIsSubmitting(false);
-  };
+    setFormData({
+      name: "",
+      phone: "",
+      city: "",
+      budget: "",
+      message: "",
+    });
+
+  } catch (error) {
+    console.error(error);
+    toast({
+      title: "Error",
+      description: "Submission failed. Try again.",
+    });
+  }
+
+  setIsSubmitting(false);
+};
+
 
   return (
     <section id="franchise" className="py-24 bg-background relative overflow-hidden">
@@ -165,7 +210,7 @@ export function FranchiseSection() {
             {/* Trust Indicators */}
             <div className="grid grid-cols-2 gap-4">
               <div className="bg-card border border-border rounded-xl p-6 text-center">
-                <div className="font-display text-4xl text-secondary mb-2">₹15L+</div>
+                <div className="font-display text-4xl text-secondary mb-2">₹20L+</div>
                 <div className="text-muted-foreground text-sm">Starting Investment</div>
               </div>
               <div className="bg-card border border-border rounded-xl p-6 text-center">

@@ -68,7 +68,7 @@ export function AboutSection() {
 
         {/* Services Grid */}
         <div className="text-center mb-12">
-          <h3 className="font-display text-3xl text-foreground">what we  provide to SERVICES<span className="text-primary">SERVICES</span>
+          <h3 className="font-display text-3xl text-foreground">what we  provide to <span className="text-primary">FRANCHISE PARTNERS</span>
           </h3>
         </div>
 

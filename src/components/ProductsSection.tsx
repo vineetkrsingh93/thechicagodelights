@@ -133,6 +133,10 @@ const menuItems: Record<string, any> = {
     { name: "Kitkat Shake", prices: [90] },
     { name: "Mango Shake", prices: [90] },
   ],
+  "Garlic Bread 🥖": [
+  { name: "Garlic Bread", prices: [109] },
+  { name: "Stuffed Garlic Bread", prices: [129] },
+],
 
   "Mocktails 🍹": [
     { name: "Bubble Gum", prices: [120] },
