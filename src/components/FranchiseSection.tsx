@@ -214,7 +214,7 @@ const handleSubmit = async (e: React.FormEvent) => {
                 <div className="text-muted-foreground text-sm">Starting Investment</div>
               </div>
               <div className="bg-card border border-border rounded-xl p-6 text-center">
-                <div className="font-display text-4xl text-secondary mb-2">2 Years</div>
+                <div className="font-display text-4xl text-secondary mb-2">12 MONTHS</div>
                 <div className="text-muted-foreground text-sm">Average ROI Period</div>
               </div>
             </div>

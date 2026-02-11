@@ -46,8 +46,8 @@ export function Footer() {
             </motion.a>
 
             <p className="text-muted-foreground mb-4 max-w-md">
-              Pizza & Grillz — India's premium pizza franchise since 2014.
-              Join our family of 80+ successful outlets across the nation.
+              Chicago Delights Pizza & Grillz — India's premium pizza franchise since 2014.
+              Join our family of 80+ successful outlets across PAN INDIA
             </p>
 
             <p className="text-muted-foreground text-sm">
@@ -109,6 +109,7 @@ export function Footer() {
                 <a
                   href="https://www.instagram.com/chicagodelights/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-3 text-muted-foreground hover:text-primary"
                 >
                   <Instagram className="w-5 h-5 text-primary" />
@@ -120,6 +121,7 @@ export function Footer() {
                 <a
                   href="https://www.facebook.com/chicagodelightsind/"
                   target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center gap-3 text-muted-foreground hover:text-primary"
                 >
                   <Facebook className="w-5 h-5 text-primary" />
@@ -131,17 +133,19 @@ export function Footer() {
           </motion.div>
         </div>
 
-        {/* Map */}
+        {/* MAP — your original embed restored */}
         <motion.div
           variants={item}
           className="mt-12 rounded-xl overflow-hidden border border-border"
         >
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18..."
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3430.0447878234386!2d76.77!3d30.72!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMzDCsDQzJzEyLjAiTiA3NsKwNDYnMTIuMCJF!5e0!3m2!1sen!2sin!4v1234567890"
             width="100%"
             height="300"
             style={{ border: 0 }}
+            allowFullScreen
             loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
             title="Chicago Delights Location"
           />
         </motion.div>
