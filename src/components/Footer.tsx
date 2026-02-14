@@ -2,10 +2,11 @@ import { MapPin, Phone, Mail, Instagram, Facebook } from "lucide-react";
 import { motion } from "framer-motion";
 
 const footerLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Franchise", href: "#franchise" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "/#home" },
+  { name: "About", href: "/#about" },
+  { name: "Franchise", href: "/#franchise" },
+  { name: "Business", href: "/#business", isRoute: true },
+  { name: "Contact", href: "/#contact" },
 ];
 
 const container = {

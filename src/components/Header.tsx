@@ -5,12 +5,13 @@ import { ThemeToggle } from "@/components/ThemeToggle";
 import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks = [
-  { name: "Home", href: "#home" },
-  { name: "About", href: "#about" },
-  { name: "Products", href: "#products" },
-  { name: "Gallery", href: "#gallery" },
-  { name: "Franchise", href: "#franchise" },
-  { name: "Contact", href: "#contact" },
+  { name: "Home", href: "/#home" },
+  { name: "About", href: "/#about" },
+  { name: "Products", href: "/#products" },
+  { name: "Gallery", href: "/#gallery" },
+  { name: "Franchise", href: "/#franchise" },
+  { name: "Business", href: "/#business"},
+  { name: "Contact", href: "/#contact" },
 ];
 
 const whatsappNumber = "919996553545";
@@ -35,11 +36,10 @@ export function Header() {
       initial={{ y: -80, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled
           ? "bg-background/95 backdrop-blur-md shadow-elevated border-b border-border"
           : "bg-transparent"
-      }`}
+        }`}
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
