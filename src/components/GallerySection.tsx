@@ -13,10 +13,6 @@ import outlet10 from "@/assets/outlet10.jpeg";
 import outlet11 from "@/assets/outlet11.jpeg";
 import outlet12 from "@/assets/outlet12.jpeg";
 
-import outlet14 from "@/assets/outlet14.jpeg";
-import outlet15 from "@/assets/outlet15.jpeg";
-import outlet16 from "@/assets/outlet16.jpeg";
-
 const galleryImages = [
    { src: outlet7, alt: "Grand Outlet Entrance", category: "outlet" },
    { src: outlet2, alt: "Chicago Delights Seating Area", category: "outlet" },
@@ -30,11 +26,6 @@ const galleryImages = [
   { src: outlet12, alt: "Luxury Seating Area", category: "outlet" },
   { src: outlet5, alt: "Chicago Delights Night Exterior", category: "outlet" },
   { src: outlet6, alt: "Entrance & Waiting Area", category: "outlet" },
-   { src: outlet16, alt: "Customers Dining", category: "outlet" },
-
-     { src: outlet14, alt: "Customers Dining", category: "outlet" },
-      { src: outlet15, alt: "Customers Dining", category: "outlet" },
- 
 ];
 
 
